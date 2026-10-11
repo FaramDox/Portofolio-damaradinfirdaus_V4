@@ -45,7 +45,7 @@ function About() {
               <div style={{fontFamily:'var(--font-mono)', fontSize:'0.82rem', lineHeight:'1.9', color:'var(--text-sec)'}}>
                 {'{'}<br />
                 &nbsp;&nbsp;"nama": <span style={{color:'#22c55e'}}>"Damar Adin Firdaus"</span>,<br />
-                &nbsp;&nbsp;"role": <span style={{color:'#22c55e'}}>"Junior Web Developer"</span>,<br />
+                &nbsp;&nbsp;"role": <span style={{color:'#22c55e'}}>"Frontend Web Developer"</span>,<br />
                 &nbsp;&nbsp;"lokasi": <span style={{color:'#22c55e'}}>"Lampung, ID"</span>,<br />
                 &nbsp;&nbsp;"pendidikan": <span style={{color:'#22c55e'}}>"D4 Teknologi Rekayasa Perangkat Lunak"</span>,<br />
                 &nbsp;&nbsp;"status": <span style={{color:'var(--cyan)'}}>"open_to_work"</span><br />
@@ -73,7 +73,7 @@ function About() {
           </div>
 
           <div className="about-text">
-            <p className="justify">Halo! Saya <strong>Damar Adin Firdaus</strong>, seorang <strong>Junior Web Developer</strong> yang passionate dalam membangun aplikasi web modern yang tidak hanya fungsional, tapi juga memiliki desain yang memukau.
+            <p className="justify">Halo! Saya <strong>Damar Adin Firdaus</strong>, seorang <strong>Frontend Web Developer</strong> yang passionate dalam membangun aplikasi web modern yang tidak hanya fungsional, tapi juga memiliki desain yang memukau.
             </p>
 
             <p className="justify">Saya percaya bahwa <strong>teknologi yang baik</strong> adalah yang mampu menyelesaikan masalah nyata dengan cara yang elegan. Setiap baris kode yang saya tulis adalah upaya untuk menciptakan pengalaman yang lebih baik bagi pengguna.

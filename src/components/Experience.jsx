@@ -46,14 +46,14 @@ function Experience() {
       image: '/image/sertifikat1.png'
     },
     {
-      name: 'Sertifikat 5',
-      issuer: 'Institusi',
+      name: 'Pelatihan UI/UX Design',
+      issuer: 'Pusdiklat BKPM',
       year: '2026',
       image: '/image/sertif5.png'
     },
     {
-      name: 'Sertifikat 6',
-      issuer: 'Institusi',
+      name: 'Mahir Membuat Website dengan Laravel 9',
+      issuer: 'Coding Studio',
       year: '2026',
       image: '/image/sertif6.png'
     }

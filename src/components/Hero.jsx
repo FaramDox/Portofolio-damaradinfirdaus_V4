@@ -5,10 +5,10 @@ function Hero() {
 
   useEffect(() => {
     const roles = [
-      'Junior Web Developer',
-      'Full Stack Engineer',
+      'Frontend Web Developer',
+      'Game Design',
       'UI/UX Enthusiast',
-      'Problem Solver'
+      'Database & Backend Developer',
     ];
     let roleIndex = 0;
     let charIndex = 0;

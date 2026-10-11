@@ -1,51 +1,121 @@
-# Portfolio Damar Adin Firdaus - React Version
+# Portfolio Damar Adin Firdaus
 
-Portfolio website pribadi dibangun dengan React + Vite.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://damaradinfirdaus.netlify.app/)
 
-## Tech Stack
-- React 18
-- Vite
-- Vanilla CSS (custom animations)
+Portfolio website pribadi dibangun dengan React + Vite. Modern, responsif, dan interaktif.
 
-## Features
-- ⚡ Fast loading dengan Vite
+🌐 **Live Demo**: [damaradinfirdaus.netlify.app](https://damaradinfirdaus.netlify.app/)
+
+---
+
+## 🚀 Tech Stack
+
+- **React 18** - Library UI
+- **Vite** - Build tool & dev server
+- **Vanilla CSS** - Custom animations & styling
+- **Web3Forms** - Contact form service
+
+## ✨ Features
+
+- ⚡ Fast loading dengan Vite HMR
 - 🎨 Modern UI dengan animasi smooth
-- 📱 Fully responsive design
-- 🎯 Interactive components (typing effect, scroll reveal, skill bars)
-- 📧 Contact form integration (Web3Forms)
+- 📱 Fully responsive design (mobile-first)
+- 🎯 Interactive components:
+  - Typing effect animation
+  - Scroll reveal animations
+  - Animated skill progress bars
+- 📧 Contact form integration
 - 🖼️ Certificate modal viewer
+- 🎭 Smooth page transitions
 
-## Development
+## 📦 Installation
 
 ```bash
+# Clone repository
+git clone https://github.com/username/portfolio-react.git
+cd portfolio-react
+
+# Install dependencies
 npm install
+
+# Run development server
 npm run dev
 ```
 
-Open http://localhost:5173
+Development server berjalan di `http://localhost:5173`
 
-## Build Production
+## 🛠️ Build & Deploy
+
+### Build Production
 
 ```bash
+# Build untuk production
 npm run build
+
+# Preview production build
 npm run preview
 ```
 
-## Project Structure
+### Deploy ke Netlify
+
+1. Build project: `npm run build`
+2. Drag folder `dist` ke [Netlify Drop](https://app.netlify.com/drop)
+3. Atau gunakan Netlify CLI:
+   ```bash
+   npm install -g netlify-cli
+   netlify deploy --prod
+   ```
+
+### Deploy ke GitHub Pages
+
+```bash
+# Install gh-pages
+npm install -D gh-pages
+
+# Tambahkan script di package.json
+"scripts": {
+  "deploy": "npm run build && gh-pages -d dist"
+}
+
+# Deploy
+npm run deploy
+```
+
+## 📁 Project Structure
 
 ```
-src/
-├── components/     # React components
-├── hooks/          # Custom hooks
-├── App.jsx         # Main app
-├── App.css         # Global styles
-└── main.jsx        # Entry point
+portfolio-react/
+├── public/             # Static assets
+├── src/
+│   ├── components/     # React components
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Certificates.jsx
+│   │   └── Contact.jsx
+│   ├── hooks/          # Custom React hooks
+│   ├── App.jsx         # Main app component
+│   ├── App.css         # Global styles
+│   └── main.jsx        # Entry point
+├── index.html          # HTML template
+├── vite.config.js      # Vite configuration
+└── package.json        # Dependencies
 ```
 
-## Deploy
-- Vercel: `vercel --prod`
-- Netlify: Drag `dist` folder after build
-- GitHub Pages: Use `gh-pages` package
+## 🧰 Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build untuk production |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run ESLint |
+
+## 📝 License
+
+© 2026 Damar Adin Firdaus. All rights reserved.
 
 ---
-© 2026 Damar Adin Firdaus
+
+**Built with ❤️ using React & Vite**
