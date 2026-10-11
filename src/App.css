@@ -20,7 +20,12 @@
     --font-mono: 'JetBrains Mono', monospace;
   }
 
-  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  *, *::before, *::after { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
 
   html { scroll-behavior: smooth; font-size: 16px; }
 
@@ -31,10 +36,21 @@
     font-size: 1.05rem;
     line-height: 1.7;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   /* ── CANVAS PARTICLES ── */
-  #particles { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+  #particles { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: 0; 
+    pointer-events: none;
+    will-change: transform;
+  }
 
   /* ── GRID OVERLAY ── */
   .grid-overlay {
@@ -107,7 +123,16 @@
   .nav-cta:hover { box-shadow: 0 0 18px var(--cyan-glow), inset 0 0 18px rgba(0,245,255,0.08); }
 
   /* ── HAMBURGER ── */
-  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; z-index: 200; }
+  .hamburger { 
+    display: none; 
+    flex-direction: column; 
+    gap: 5px; 
+    cursor: pointer; 
+    padding: 4px; 
+    z-index: 200;
+    background: none;
+    border: none;
+  }
   .hamburger span { display: block; width: 24px; height: 2px; background: var(--cyan); border-radius: 2px; transition: all 0.3s; }
   .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
   .hamburger.active span:nth-child(2) { opacity: 0; }
@@ -520,7 +545,7 @@
     position: relative; z-index: 1;
   }
   .footer-logo { font-family: var(--font-display); font-size: 0.9rem; font-weight: 700; color: var(--cyan); letter-spacing: 0.06em; }
-  .footer-copy { font-family: var(--font-mono); font-size: 0.68rem; color: var(--text-muted); letter-spacing: 0.04em; }
+  .footer-copy { font-family: var(--font-mono); font-size: 0.68rem; color: #ffffff; letter-spacing: 0.04em; }
   .footer-social { display: flex; gap: 0.6rem; }
   /* --- Google Translate Styling --- */
 .language-picker {
@@ -734,4 +759,14 @@ body {
     .tech-grid { grid-template-columns: repeat(2, 1fr); }
     .hero-name { font-size: 2.2rem; } /* Mengecilkan sedikit ukuran font nama */
     .stat-grid { grid-template-columns: 1fr; } /* Statistik About Me menjadi 1 kolom */
+  }
+
+  /* Reduced Motion for Accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }

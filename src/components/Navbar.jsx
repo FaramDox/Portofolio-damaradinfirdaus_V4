@@ -25,9 +25,15 @@ function Navbar() {
         <li><a href="#contact" onClick={() => setIsMobileOpen(false)}>Kontak</a></li>
       </ul>
       <a href="#contact" className="nav-cta">Hire Me</a>
-      <div className={`hamburger ${isMobileOpen ? 'active' : ''}`} id="hamburger" onClick={toggleMobile}>
+      <button 
+        className={`hamburger ${isMobileOpen ? 'active' : ''}`} 
+        id="hamburger" 
+        onClick={toggleMobile}
+        aria-label="Toggle navigation menu"
+        aria-expanded={isMobileOpen}
+      >
         <span></span><span></span><span></span>
-      </div>
+      </button>
     </nav>
   );
 }
