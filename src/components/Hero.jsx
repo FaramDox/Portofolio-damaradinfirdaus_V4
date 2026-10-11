@@ -6,9 +6,9 @@ function Hero() {
   useEffect(() => {
     const roles = [
       'Frontend Web Developer',
-      'Game Design',
+      'Game Designer',
       'UI/UX Enthusiast',
-      'Database & Backend Developer',
+      'Database & Backend Web Developer',
     ];
     let roleIndex = 0;
     let charIndex = 0;
@@ -114,9 +114,9 @@ function Hero() {
               </svg>
               <div className="avatar-glow"></div>
             </div>
-            <div className="float-badge b1"><span className="dot"></span>UI/UX Design</div>
-            <div className="float-badge b2"><span className="dot"></span>3+ Yrs Exp</div>
-            <div className="float-badge b3">⚡ Full Stack</div>
+            <div className="float-badge b1"><span className="dot"></span>⚡ Full Stack</div>
+            <div className="float-badge b2"><span className="dot"></span>Game Designer</div>
+            <div className="float-badge b3"><span className="dot"></span>3+ Yrs Exp</div>
           </div>
         </div>
       </div>
